@@ -52,7 +52,7 @@ const Navbar = () => {
     const [active, setActive] = useState(false)
     return (
         <>
-            <div className="flex justify-center sm:justify-between items-center md:justify-between h-[77px] gap-4 w-full px-5 py-3  bg-transparent fixed top-0 backdrop-blur-3xl">
+            <div className="flex justify-center sm:justify-between items-center md:justify-between h-[77px] gap-4 w-screen pl-4 py-3  bg-transparent fixed top-0 backdrop-blur-3xl">
                 <div className="w-[30%]">
                     
                     <h1 className="text-2xl sm:xl font-bold dark:text-white">webBase</h1>
@@ -65,13 +65,13 @@ const Navbar = () => {
                         <Link href="#contact" className="hover:text-primary">Contact</Link>
                     </ul>
                 </div>
-                <div className="w-[30%] flex justify-center gap-10 items-center px-5">
+                <div className="w-[30%] flex justify-between items-center px-5">
                     <ThemeToggle/>
-                    <div onClick={()=>setActive(!active)} className={`${active ?` bg-black w-6 h-[2px] rounded transition-all relative before:content-[""] before:bg-black before:dark:bg-white before:w-6 before:h-[2px] before:rounded  before:absolute before:translate-y-0 before:rotate-45 before:duration-500 after:content-[""] after:bg-black after:dark:bg-white after:w-6 after:h-[2px] after:rounded after:absolute after:translate-y-0 after:-rotate-45 after:duration-500 bg-transparent cursor-pointer lg:hidden` : `bg-black dark:bg-white w-6 h-[2px] rounded transition-all relative before:content-[""] before:bg-black before:dark:bg-white before:w-6 before:h-[2px] before:rounded  before:absolute before:-translate-y-2 before:duration-500 after:content-[""] after:bg-black after:dark:bg-white after:w-6 after:h-[2px] after:rounded after:absolute after:translate-y-2 after:duration-500 cursor-pointer lg:hidden`} ` }>
+                    <div onClick={()=>setActive(!active)} className={`${active ?` bg-black w-6 h-[2px] rounded transition-all relative  before:content-[""] before:bg-black before:dark:bg-white before:w-6 before:h-[2px] before:rounded  before:absolute before:translate-y-0 before:rotate-45 before:duration-500 after:content-[""] after:bg-black after:dark:bg-white after:w-6 after:h-[2px] after:rounded after:absolute after:translate-y-0 after:-rotate-45 after:duration-500 bg-transparent cursor-pointer lg:hidden` : `bg-black dark:bg-white w-6 h-[2px] rounded transition-all relative before:content-[""] before:bg-black before:dark:bg-white before:w-6 before:h-[2px] before:rounded  before:absolute before:-translate-y-2 before:duration-500 after:content-[""] after:bg-black after:dark:bg-white after:w-6 after:h-[2px] after:rounded after:absolute after:translate-y-2 after:duration-500 cursor-pointer lg:hidden`} ` }>
                     </div>
                 </div>
             </div>
-            <motion.div className={`flex flex-col justify-start items-start h-[60vh] w-full fixed mt-0 bg-white dark:bg-gray-900 opacity-90 text-gray-600 gap-5 px-10 lg:hidden py-10`}
+            <motion.div className={`flex flex-col justify-start items-start h-[60vh] mt-[77px]  w-full fixed bg-white dark:bg-gray-900 opacity-90 text-gray-600 gap-5 px-10 lg:hidden py-10`}
             variants={slidInRight}
             initial='hidden'
             animate={ active ? 'show' : 'hidden'}>

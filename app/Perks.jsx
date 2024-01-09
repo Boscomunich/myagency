@@ -37,12 +37,13 @@ const slidInRight = {
 
 const PriceCard =({name, price,}) => {
     return(
+            <>
             <motion.div 
             variants={slidInTop}
             initial="hidden"
             whileInView="show"
             viewport={{once:true}}
-            className="flex flex-col justify-center items-center py-10 px-5 lg:w-[28%] md:w-[45%] sm:w-[95%] my-5 h-[500px] bg-white dark:bg-gray-900 gap-5 rounded-md">
+            className="flex flex-col justify-center items-center py-10 px-5 lg:w-[26%] md:w-[45%] sm:w-[90%] my-5 h-[500px] bg-white dark:bg-gray-900 gap-5 rounded-md">
                 <h1 className="text-xl font-semibold text-center dark:text-white">{name}</h1>
                 <h1 className="text-2xl font-bold text-center dark:text-white">${price}</h1>
                 <Link href="#contact">
@@ -56,6 +57,7 @@ const PriceCard =({name, price,}) => {
                     <p>Free ssl certificate</p>
                 </div>
             </motion.div>
+            </>
     )
 }
 
@@ -104,7 +106,7 @@ const Perks = () => {
                     ))
                 }
             </div>
-            <div className="py-20 px-2 bg-slate-100 flex flex-wrap justify-evenly items-center gap-3 mt-10 dark:bg-[#0F1C2F]">
+            <div className="py-20 bg-slate-100 flex flex-wrap justify-evenly items-center mt-10 dark:bg-[#0F1C2F]">
                 <motion.h1
                 variants={slidInRight}
                 initial="hidden"

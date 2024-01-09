@@ -27,6 +27,7 @@ const fadeIn = {
 
 const Body = () => {
     return (
+        <>
         <div className="h-90vh" id="features">
             <div className="flex justify-evenly gap-5 flex-wrap pt-20">
                 {
@@ -53,8 +54,8 @@ const Body = () => {
                     ))
                 }
             </div>
-            <div className="flex mt-10 items-center justify-evenly px-10 gap-10">
-                <div className="flex justify-center w-[50%] gap-5 items-start h-[70vh] mb-60 md:hidden sm:hidden">
+            <div className="flex mt-10 items-center justify-evenly px-5 gap-5">
+                <div className="flex justify-center w-[45%] gap-5 items-start h-[70vh] mb-60 md:hidden sm:hidden">
                     <div className="h-full w-[50%] gap-3">
                         <div className="my-3">
                             <Image
@@ -85,7 +86,7 @@ const Body = () => {
                         initial="hidden"
                         whileInView="show"
                         viewport={{once:true}}
-                className="lg:w-[50%] w-[90%] flex flex-col gap-5">
+                className="lg:w-[45%] w-[90%] flex flex-col gap-5">
                     <p className="text-primary font-semibold text-lg">
                         Why Choose Us
                     </p>
@@ -99,6 +100,7 @@ const Body = () => {
                 </motion.div>
             </div>
         </div>
+        </>
     );
 };
 

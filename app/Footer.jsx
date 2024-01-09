@@ -38,13 +38,13 @@ const Footer = () => {
                         <TiSocialInstagram className="h-10 w-10 hover:text-primary rounded-full"/>
                     </div>
                 </motion.div>
-                <div className="lg:w-[60%] w-full flex flex-wrap start">
+                <div className="lg:w-[60%] w-full flex gap-4 flex-wrap start">
                     <motion.div 
                     variants={slidInTop}
                     initial="hidden"
                     whileInView="show"
                     viewport={{once:true}}
-                    className="flex flex-col items-start justify-start gap-2 w-[18%] min-w-[200px]">
+                    className="flex flex-col items-start justify-start w-[18%] min-w-[200px]">
                         <h1 className="text-2xl font-medium">Quick Links</h1>
                         <div className="flex flex-col items-start justify-center gap-2 text-lg font-[400] text-gray-400">
                             <Link href='/'>Home</Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{once:true}}
-                    className="flex flex-col items-start justify-start gap-2 w-[18%] min-w-[200px]">
+                    className="flex flex-col items-start justify-start w-[18%] min-w-[200px]">
                         <h1 className="text-2xl font-medium">Services</h1>
                         <div className="flex flex-col items-start justify-center gap-2 text-lg font-[400] text-gray-400">
                             <Link href='#'>Web Development</Link>
@@ -71,7 +71,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="show"
                     viewport={{once:true}}
-                    className="flex flex-col items-start justify-start gap-2 w-[18%] min-w-[200px]">
+                    className="flex flex-col items-start justify-start w-[18%] min-w-[200px]">
                         <h1 className="text-2xl font-medium">Support</h1>
                         <div className="flex flex-col items-start justify-center gap-2 text-lg font-[400] text-gray-400">
                             <Link href='#'>Company</Link>

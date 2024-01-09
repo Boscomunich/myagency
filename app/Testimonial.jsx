@@ -147,7 +147,7 @@ const Testimonial = () => {
                     </Form.Item>
                 </Form>
             </Modal>
-            <div className='w-full flex justify-center my-5'>
+            <div className='flex justify-center my-5'>
                 <button 
                 className='px-4 py-2 text-[16px] font-medium bg-primary text-white rounded-full'
                     onClick={showModal}>

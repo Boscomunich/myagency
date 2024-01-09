@@ -146,7 +146,7 @@ const Contact = () => {
                 className="w-[98%] lg:w-[65%] flex flex-col gap-7 p-10 dark:bg-gray-900 bg-white rounded-md">
                     <div className="flex flex-col justify-center items-center gap-4">
                         <div className="flex flex-wrap gap-5 justify-start">
-                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px]">
+                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px] sm:max-w-[250px]">
                                 <label htmlFor="name" className="text-lg font-medium text-gray-400">
                                     Full name
                                 </label>
@@ -157,7 +157,7 @@ const Contact = () => {
                                 className="border py-4 px-4 focus:border-primary outline-none rounded-md dark:bg-gray-900"
                                 onChange={(e) => setFullName(e.target.value)}/>
                             </div>
-                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px]">
+                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px] sm:max-w-[250px]">
                                 <label htmlFor="email" className="text-lg font-medium text-gray-400">
                                     Email Address
                                 </label>
@@ -168,7 +168,7 @@ const Contact = () => {
                                 className="border py-4 px-4 focus:border-primary outline-none rounded-md dark:bg-gray-900"
                                 onChange={(e) => setEmail(e.target.value)}/>
                             </div>
-                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px]">
+                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px] sm:max-w-[250px]">
                                 <label htmlFor="number" className="text-lg font-medium text-gray-400">
                                     Phone Number
                                 </label>
@@ -179,7 +179,7 @@ const Contact = () => {
                                 className="no-spinner border py-4 px-4 focus:border-primary outline-none rounded-md dark:bg-gray-900"
                                 onChange={(e) => setPhoneNo(e.target.value)}/>
                             </div>
-                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px]">
+                            <div className="flex flex-col gap-2 w-[47%]  min-w-[280px] sm:max-w-[250px]">
                                 <label htmlFor="subject" className="text-lg font-medium text-gray-400">
                                     Subject
                                 </label>

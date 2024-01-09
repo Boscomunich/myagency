@@ -18,13 +18,14 @@ const slidIn = {
 
 const Hero = () => {
     return (
+        <>
         <div className="mt-[12vh] flex justify-center gap-3 sm:px-5 px-10 items-center dark:text-white">
             <motion.div 
             variants={slidIn}
             initial="hidden"
             whileInView="show"
             viewport={{once:true}}
-            className="flex flex-col gap-3 pt-[15vh] sm:pt-[10vh] w-[50%] md:w-[90%] sm:w-[100%]">
+            className="flex flex-col gap-3 pt-[15vh] sm:pt-[10vh] w-[48%] md:w-[90%] sm:w-[90%]">
                 <div>
                     <h2 className=" text-5xl  font-bold ">
                         We specialize in UI/UX, Web Development, Graphics Design.
@@ -48,13 +49,14 @@ const Hero = () => {
                     </div>
                 </div>
             </motion.div>
-            <div className="w-[50%] sm:hidden md:hidden">
+            <div className="w-[48%] sm:hidden md:hidden">
                 <Image
                 src={heroImage}
                 alt="Image"
                 className="bg-primary rounded-full"/>
             </div>
         </div>
+        </>
     );
 };
 
